@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bricolage";
+  src: url(../assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf)
+}
+
+@font-face {
+  font-family: "DM-sans";
+  src: url(../assets/fonts/DM_Sans/static/DMSans-Light.ttf);
+}
+
+@keyframes rotate {
+  /* 10% {
+    @apply rotate-[36deg]; 
+  }
+  20% {
+    @apply rotate-[72deg]; 
+  }
+  30% {
+    @apply rotate-[108deg]; 
+  }
+  40% {
+    @apply rotate-[144deg]; 
+  } */
+  50% {
+    @apply rotate-[180deg]; 
+  }
+  100% {
+    @apply rotate-[100deg];
+  }
+}
+
+.animate-my-loader {
+  animation-name: rotate;
+  animation-duration: 2;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite
+}
+
+@layer components {
+  .our-borders {
+    @apply border border-gray-700;
+  }
+  
+}
+
