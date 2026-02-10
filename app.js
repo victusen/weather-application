@@ -585,7 +585,7 @@ function init() {
     // 5. Initial weather load (Default location: Berlin)
     // This triggers the whole data flow for the first time
     fetchWeatherData(state.latitude, state.longitude);
-}
+} 
 
 // Start the application!
 init();

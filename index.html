@@ -106,7 +106,7 @@
       <button type="submit" class="text-white focus-visible:btn-outline max-sm:w-full py-2.5 px-6 rounded-lg cursor-pointer bg-[#4657d7] transition-all hover:bg-[#2739bd]" id="submit">Search</button>
     </form>
 
-      <div class="flex flex-col lg:flex-row gap-10 md:gap-5 w-full justify-between mt-10">
+      <div class="flex flex-col gap-15 lg:flex-row lg:gap-10 md:gap-15 w-full justify-between mt-10">
         <div class="flex flex-col gap-5 w-full lg:w-[65%]">
           <div class="relative flex flex-col max-sm:mb-[8px] items-start">
             <img src="./assets/images/bg-today-large.svg" class="self-stretch mt-[-12px] my-clip h-80 hidden md:block" alt="Large background blob">
@@ -149,7 +149,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col overflow-auto h-126 md:h-168 rounded-3xl gap-4 p-5 w-full lg:w-[35%] bg-[#25253f] no-scrollbar">
+        <div class="flex flex-col rounded-3xl gap-4 p-6 w-full lg:w-[35%] bg-[#25253f]">
           <div class="flex justify-between items-center ">
             <p class="text-lg font-semibold text-white">Hourly forecast</p>
             <div class="flex flex-col relative">
@@ -168,8 +168,7 @@
               </div>
             </div>
           </div>
-
-          <div id="hourly-forecast-container" class="flex flex-col gap-4"></div>
+          <div id="hourly-forecast-container" class="pt-3 overflow-auto h-100 md:h-140 flex flex-col gap-4 no-scrollbar"></div>
         </div>
       </div>
 
